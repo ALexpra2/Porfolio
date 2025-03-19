@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #0d1117;
+  color: #d1d5db;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center;
+}
+
+/* TITULOS */
+h1, h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 36px;
+  color: #58a6ff;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #8b949e;
+}
+
+/* ABOUT ME */
+.aboutme {
+  background-color: #161b22;
+  padding: 25px;
+  margin: 50px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.aboutme:hover {
+  transform: scale(1.02);
+}
+
+.aboutme p {
+  font-size: 1rem;
+  color: #c9d1d9;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.aboutme p:last-child {
+  text-align: center;
+  font-weight: bold;
+  color: #58a6ff;
+}
+
+/* TECNOLOGÍAS */
+.tech-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+.tech-icons img {
+  width: 120px;
+  height: 34px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* PROYECTOS */
+.divProjects {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #161b22;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out;
+}
+
+.divProjects:hover {
+  transform: scale(1.02);
+}
+
+.divProjects li {
+  padding: 15px;
+  border-bottom: 1px solid #30363d;
+}
+
+.divProjects img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.divProjects img:hover {
+  transform: scale(1.05);
+}
+
+.divProjects a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #58a6ff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.divProjects a:hover {
+  color: #1f6feb;
+}
+
+/* CURRÍCULUM */
+.divStudies, .divExperience, .divProjectsCurr {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #161b22;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.divStudies h2, .divExperience h2, .divProjectsCurr h2 {
+  color: #58a6ff;
+}
+
+.divStudies ul, .divExperience ul, .divProjectsCurr ul {
+  list-style: none;
+  padding: 0;
+}
+
+.divStudies li, .divExperience li, .divProjectsCurr li {
+  padding: 15px;
+  border-bottom: 1px solid #30363d;
+}
+
+/* BOTÓN DESCARGA */
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #58a6ff, #1f6feb);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1f6feb, #58a6ff);
+  transform: scale(1.05);
+}
