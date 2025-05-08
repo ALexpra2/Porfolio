@@ -20,16 +20,17 @@ function Resume() {
         <>
             <h1>Currículum Vitae</h1>
 
-            <div class="divStudies">
+            <div className="divStudies">
                 <h2>Formación Académica</h2>
                 <ul>
+                    <li>Bootcamp Full Stack Developer – The Bridge (octubre 2024 – abril 2025)</li>
                     <li>Diplomado en Ciencias Empresariales - Universidad de Granada (2015)</li>
                     <li>Técnico Deportivo de Media Montaña Nivel 1 (2014)</li>
                     <li>Grado Elemental de Música (Oboe) - Conservatorio Ángel Barrios de Granada</li>
                 </ul>
             </div>
 
-            <div class="divExperience">
+            <div className="divExperience">
                 <h2>Experiencia Profesional</h2>
                 <ul>
                     <li>Operador de digitalización - Scanea2 Digitalización de documentos SL (2009, 2015-2024)</li>
@@ -38,14 +39,19 @@ function Resume() {
                 </ul>
             </div>
 
-            <div class="divProjectsCurr">
-                <h2>Habilidades y Tecnologías</h2>
-                <ul>
-                    <li>HTML, CSS, JavaScript, Node.js, Express, React</li>
-                    <li>MongoDB, SQL</li>
-                    <li>Postman, Jest, Swagger</li>
-                </ul>
-            </div>
+            <div className="divProjectsCurr">
+    <h2>Habilidades y Tecnologías</h2>
+    <ul>
+        <li><strong>Lenguajes:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Frontend:</strong> React, TailwindCSS</li>
+        <li><strong>Backend:</strong> Node.js, Express</li>
+        <li><strong>Bases de Datos:</strong> MySQL, MongoDB</li>
+        <li><strong>Herramientas:</strong> Git, GitHub, Postman, Swagger, Slack, Firebase</li>
+        <li><strong>Testing:</strong> Jest</li>
+       
+    </ul>
+</div>
+
 
 
 
