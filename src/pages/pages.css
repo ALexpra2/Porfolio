@@ -65,6 +65,7 @@ h2 {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 20px;
 }
 
 .tech-icons {
@@ -103,6 +104,7 @@ h2 {
 .divProjects li {
   padding: 15px;
   border-bottom: 1px solid #30363d;
+  list-style: none;
 }
 
 .divProjects img {
@@ -169,4 +171,69 @@ button {
 button:hover {
   background: linear-gradient(135deg, #1f6feb, #58a6ff);
   transform: scale(1.05);
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .aboutme,
+  .divProjects,
+  .divStudies,
+  .divExperience,
+  .divProjectsCurr {
+    margin: 30px 15px;
+    padding: 15px;
+  }
+
+  .tech-icons img {
+    width: 100px;
+    height: auto;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .aboutme p {
+    font-size: 0.95rem;
+  }
+
+  .tech-icons img {
+    width: 80px;
+  }
+
+  .divProjects img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .divProjects li {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
 }

@@ -13,11 +13,11 @@ function Home() {
                 <p>¡Estoy muy emocionado por seguir aprendiendo y poniendo en práctica mis conocimientos en el desarrollo web!</p>
             </div>
 
-            <div class="tech-container">
+            <div className="tech-container">
         <h2>
             🛠 Tecnologías y herramientas
         </h2>
-        <div class="tech-icons">
+        <div className="tech-icons">
     <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
     <img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
     <img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" />

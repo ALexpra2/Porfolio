@@ -6,11 +6,13 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
 }
 
 .carousel-container h2 {
     color: #58a6ff;
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .carousel-image {
@@ -18,6 +20,8 @@
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    max-height: 400px;
 }
 
 .carousel-image:hover {
@@ -29,4 +33,41 @@
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
+    padding: 0 10px;
+}
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 15px;
+        margin: 30px 20px;
+    }
+
+    .carousel-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .carousel-text {
+        font-size: 16px;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+    .carousel-container {
+        padding: 10px;
+        margin: 20px 10px;
+    }
+
+    .carousel-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .carousel-text {
+        font-size: 15px;
+    }
+
+    .carousel-image {
+        max-height: 250px;
+    }
 }
