@@ -7,8 +7,7 @@
 ## 🌐 Web del portafolio
 
 Accede a mi portafolio en:  
-🔗 [www.alexprados.es](https://www.alexprados.es) *(Dominio personalizado)*
-
+🔗 [www.alexprados.es](https://www.alexprados.es)
 ---
 
 ## 📌 Tecnologías principales
@@ -50,7 +49,6 @@ Accede a mi portafolio en:
 ## 📝 Estado del portfolio
 
 Este portfolio está en constante mejora. Pronto incluiré nuevas secciones como:
-- Experiencia laboral previa adaptada al sector tech
 - Certificaciones adicionales
 - Proyectos colaborativos o hackatones
 
