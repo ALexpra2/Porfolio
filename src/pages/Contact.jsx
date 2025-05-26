@@ -14,7 +14,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/contact', formData);
+      await axios.post('https://porfolio-back-iho8.onrender.com/api/contact', formData);
       setSuccess(true);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
