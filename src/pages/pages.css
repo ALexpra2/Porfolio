@@ -8,50 +8,54 @@
 }
 
 body {
-  background-color: #0d1117;
+  background-color: #121524;
   color: #d1d5db;
   line-height: 1.6;
   padding: 20px;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
-/* TITULOS */
+/* ---------- TÍTULOS ---------- */
 h1, h2 {
-  text-align: center;
   font-weight: 600;
+  transition: color 0.3s ease-in-out;
 }
 
 h1 {
   font-size: 36px;
   color: #58a6ff;
-  margin-top: 20px;
+  margin: 30px 0 10px;
 }
 
 h2 {
   font-size: 24px;
-  color: #8b949e;
+  color: #58a6ff;
+  margin-bottom: 20px;
 }
 
-/* ABOUT ME */
+/* ---------- ABOUT ME ---------- */
 .aboutme {
   background-color: #161b22;
-  padding: 25px;
+  padding: 32px;
   margin: 50px auto;
-  max-width: 800px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease-in-out;
+  max-width: 900px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .aboutme:hover {
-  transform: scale(1.02);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
 }
 
 .aboutme p {
   font-size: 1rem;
   color: #c9d1d9;
   text-align: justify;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  line-height: 1.8;
 }
 
 .aboutme p:last-child {
@@ -60,10 +64,10 @@ h2 {
   color: #58a6ff;
 }
 
-/* TECNOLOGÍAS */
+/* ---------- TECNOLOGÍAS ---------- */
 .tech-container {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1100px;
+  margin: 60px auto 40px;
   text-align: center;
   padding: 0 20px;
 }
@@ -72,46 +76,48 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 14px;
   padding: 20px;
 }
 
 .tech-icons img {
   width: 120px;
-  height: 34px;
-  transition: transform 0.3s ease-in-out;
+  height: 36px;
+  border-radius: 6px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 .tech-icons img:hover {
   transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
-/* PROYECTOS */
+/* ---------- PROYECTOS ---------- */
 .divProjects {
-  max-width: 800px;
-  margin: 30px auto;
-  background: #161b22;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  max-width: 900px;
+  margin: 40px auto;
+  background: #121524;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease-in-out;
 }
 
 .divProjects:hover {
-  transform: scale(1.02);
+  transform: translateY(-3px);
 }
 
 .divProjects li {
-  padding: 15px;
+  padding: 20px 0;
   border-bottom: 1px solid #30363d;
   list-style: none;
 }
 
 .divProjects img {
   max-width: 100%;
-  border-radius: 8px;
-  margin-top: 15px;
-  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: transform 0.4s ease-in-out;
 }
 
 .divProjects img:hover {
@@ -120,29 +126,31 @@ h2 {
 
 .divProjects a {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   color: #58a6ff;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.3s ease;
 }
 
 .divProjects a:hover {
   color: #1f6feb;
+  transform: translateY(-1px);
 }
 
-/* CURRÍCULUM */
+/* ---------- CURRÍCULUM ---------- */
 .divStudies, .divExperience, .divProjectsCurr {
-  max-width: 800px;
-  margin: 30px auto;
+  max-width: 900px;
+  margin: 40px auto;
   background: #161b22;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .divStudies h2, .divExperience h2, .divProjectsCurr h2 {
   color: #58a6ff;
+  margin-bottom: 20px;
 }
 
 .divStudies ul, .divExperience ul, .divProjectsCurr ul {
@@ -151,26 +159,31 @@ h2 {
 }
 
 .divStudies li, .divExperience li, .divProjectsCurr li {
-  padding: 15px;
+  padding: 12px 0;
   border-bottom: 1px solid #30363d;
+  color: #d1d5db;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-/* BOTÓN DESCARGA */
-button {
-  margin-top: 20px;
-  padding: 12px 24px;
+/* ---------- BOTÓN DESCARGA ---------- */
+button, .download-btn {
+  margin-top: 30px;
+  padding: 14px 32px;
   font-size: 16px;
   background: linear-gradient(135deg, #58a6ff, #1f6feb);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+button:hover, .download-btn:hover {
   background: linear-gradient(135deg, #1f6feb, #58a6ff);
   transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.4);
 }
 
 /* -------------------- RESPONSIVE -------------------- */
@@ -191,7 +204,7 @@ button:hover {
   .divExperience,
   .divProjectsCurr {
     margin: 30px 15px;
-    padding: 15px;
+    padding: 20px;
   }
 
   .tech-icons img {
@@ -201,7 +214,7 @@ button:hover {
 
   button {
     font-size: 15px;
-    padding: 10px 20px;
+    padding: 12px 24px;
   }
 }
 
@@ -229,7 +242,7 @@ button:hover {
   }
 
   .divProjects li {
-    padding: 10px;
+    padding: 10px 0;
   }
 
   button {

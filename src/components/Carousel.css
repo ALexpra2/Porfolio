@@ -1,73 +1,64 @@
 .carousel-container {
-    text-align: center;
-    margin: 50px auto;
-    max-width: 800px;
-    background: #1c2431;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-    box-sizing: border-box;
+  padding: 32px 16px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
 }
 
 .carousel-container h2 {
-    color: #58a6ff;
-    margin-bottom: 20px;
-    font-size: 2rem;
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #3a649f; 
+  transition: color 0.3s ease;
+}
+
+.swiper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-    object-fit: cover;
-    max-height: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-radius: 8px;
 }
 
 .carousel-image:hover {
-    transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .carousel-text {
-    color: #c9d1d9;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-    padding: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 12px;
+  color: #3a649f; 
+  transition: color 0.3s ease;
 }
 
-/* Responsive para tablets */
+.carousel-text:hover {
+  color: #2563eb; 
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .carousel-container {
-        padding: 15px;
-        margin: 30px 20px;
-    }
+  .carousel-container {
+    padding: 24px 12px;
+  }
 
-    .carousel-container h2 {
-        font-size: 1.6rem;
-    }
+  .carousel-container h2 {
+    font-size: 22px;
+  }
 
-    .carousel-text {
-        font-size: 16px;
-    }
+  .carousel-text {
+    font-size: 16px;
+  }
 }
 
-/* Responsive para móviles */
 @media (max-width: 480px) {
-    .carousel-container {
-        padding: 10px;
-        margin: 20px 10px;
-    }
-
-    .carousel-container h2 {
-        font-size: 1.4rem;
-    }
-
-    .carousel-text {
-        font-size: 15px;
-    }
-
-    .carousel-image {
-        max-height: 250px;
-    }
+  .carousel-text {
+    font-size: 15px;
+  }
 }

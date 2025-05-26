@@ -1,8 +1,3 @@
-//Este componente mostrará la página de currículum del portfolio en la que se mostrará la experiencia laboral y educativa del desarrollador.
-
-// Usando map, recorremos los arrays y mostramos la información de cada proyecto, experiencia laboral y educación.
-
-//import { studies, experiences } from '../data/Resume';
 import './pages.css';
 
 function Resume() {
@@ -40,20 +35,16 @@ function Resume() {
             </div>
 
             <div className="divProjectsCurr">
-    <h2>Habilidades y Tecnologías</h2>
-    <ul>
-        <li><strong>Lenguajes:</strong> HTML, CSS, JavaScript</li>
-        <li><strong>Frontend:</strong> React, TailwindCSS</li>
-        <li><strong>Backend:</strong> Node.js, Express</li>
-        <li><strong>Bases de Datos:</strong> MySQL, MongoDB</li>
-        <li><strong>Herramientas:</strong> Git, GitHub, Postman, Swagger, Slack, Firebase</li>
-        <li><strong>Testing:</strong> Jest</li>
-       
-    </ul>
-</div>
-
-
-
+                <h2>Habilidades y Tecnologías</h2>
+                <ul>
+                    <li><strong>Lenguajes:</strong> HTML, CSS, JavaScript</li>
+                    <li><strong>Frontend:</strong> React, TailwindCSS</li>
+                    <li><strong>Backend:</strong> Node.js, Express</li>
+                    <li><strong>Bases de Datos:</strong> MySQL, MongoDB</li>
+                    <li><strong>Herramientas:</strong> Git, GitHub, Postman, Swagger, Slack, Firebase</li>
+                    <li><strong>Testing:</strong> Jest</li>
+                </ul>
+            </div>
 
             <div>
                 <button onClick={descargarCV} className="download-btn">

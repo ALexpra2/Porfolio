@@ -17,7 +17,7 @@ const projects = [
     description:
       'Proyecto de e-commerce con autenticación mediante Firebase y backend Node.js. Documentado con Swagger y testeado con Jest. Incluye búsqueda por categorías y gestión de productos.',
     technologies: 'Node.js, Express, Firebase, Swagger, Jest',
-    url: 'https://project-break-2-hvfa.onrender.com/',
+    url: 'https://project-break-2-hvfa.onrender.com',
     github: 'https://github.com/ALexpra2/Project-Break-2'
   },
   {

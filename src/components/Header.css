@@ -1,53 +1,78 @@
-nav {
-  background: #1c2431;
-  padding: 15px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 80px;
-  padding: 0;
+* {
   margin: 0;
-  flex-wrap: wrap; /* Para que se acomode si no cabe en una línea */
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-nav ul li a {
+.navbar {
+  background-color: #1c2431;
+  color: #f1f5f9;
+  padding: 15px 32px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hamburger {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #f1f5f9;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
   color: #58a6ff;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-links a:hover {
   color: #1f6feb;
 }
 
-/* Responsive para tablets */
+/* Responsive */
 @media (max-width: 768px) {
-  nav ul {
-    gap: 40px;
-    flex-wrap: wrap;
+  .hamburger {
+    display: block;
   }
 
-  nav ul li a {
-    font-size: 16px;
-  }
-}
-
-/* Responsive para móviles */
-@media (max-width: 480px) {
-  nav ul {
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #1c2431;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 20px 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
   }
 
-  nav ul li a {
-    font-size: 15px;
+  .nav-links.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 }
